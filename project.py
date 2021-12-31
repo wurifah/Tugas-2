@@ -1,4 +1,4 @@
-# Imports Library smtplib
+# Imports Library smtplib : library buat ngirim email
 import smtplib
 
 # SETUP EMAIL LOGIN 
@@ -22,7 +22,7 @@ Subject: %s
 %s
 """ % (sent_from, ", ".join(sent_to), sent_subject, sent_body)
 
-
+# ini program ngirim emailnya
 try:
     server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
     server.ehlo()
